@@ -47,6 +47,8 @@
 ];
 
 
+$vote = isset($_GET["vote"]) ? intval($_GET["vote"]) : null;
+
 ?>
 
 <!DOCTYPE html>
@@ -58,10 +60,11 @@
 </head>
 <body>
 
-<div class="container">
-<table class="table table-primary">
+<div class="container mt-5">
+
+  <table class="table table-primary">
   <thead>
-    <tr class="table-info">
+    <tr class="table-info ">
       <th scope="col">Name</th>
       <th scope="col">Description</th>
       <th scope="col">Parking</th>
@@ -84,7 +87,5 @@
 
 </div>
 
-
 </body>
 </html>
-
